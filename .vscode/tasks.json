@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build",
+        "type": "shell",
+        "command": "g++",
+        "args": [
+          "-std=c++11",
+          "-I",
+          "C:\\Users\\Mustofa\\OneDrive - Institut Teknologi Sepuluh Nopember\\Dokumen\\Tugas\\PAA\\New folder\\SFML\\include",
+          "-L",
+          "C:\\Users\\Mustofa\\OneDrive - Institut Teknologi Sepuluh Nopember\\Dokumen\\Tugas\\PAA\\New folder\\SFML\\lib",
+          "-lsfml-graphics",
+          "-lsfml-window",
+          "-lsfml-system",
+          "${file}",
+          "-o",
+          "${fileDirname}/${fileBasenameNoExtension}"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }
+  
